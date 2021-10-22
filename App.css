@@ -1,9 +1,20 @@
-body{
+.body2{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
     /* background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/09/16/54765-minions.jpg); */
+}
+
+.site-footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    color: red !important;
+}
+
+i{
+    color:#ef982c;
 }
 textarea{
     width:80%;
