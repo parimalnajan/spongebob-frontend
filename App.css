@@ -81,4 +81,8 @@ img{
     textarea{
         width: 95%;
     }
+    .site-footer{
+        position: static;
+        margin-top: 48px;
+    }
 }
