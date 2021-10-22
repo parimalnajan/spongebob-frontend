@@ -7,8 +7,10 @@
 }
 
 .site-footer{
+    
+    margin-top: 32px;
+    position: fixed;
     bottom: 0;
-    position: absolute;
     width: 100%;
     color: red !important;
 }
