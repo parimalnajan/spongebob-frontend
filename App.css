@@ -1,12 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+    /* background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/09/16/54765-minions.jpg); */
+}
 textarea{
     width:80%;
+    padding: 12px;
     display: block;
     max-width: 600px;
-    height: 20vh;
+    height: 10vh;
     border: 2px solid orange;
     border-radius: 8px;
     margin-bottom: 16px;
     opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
 #btn-translate{
@@ -23,7 +33,7 @@ textarea{
     /* color:#f3ca68; */
     color: #ef982c;  
     
-    font-size: 48px;
+    font-size: 30px;
 
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black; 
@@ -36,17 +46,15 @@ textarea{
 
 .subtitle{
     color: #feeb60;   
-    margin-bottom: 64px;
+    margin-bottom: 8px;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: black; 
     font-size: 24px;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Bebas Neue', cursive;
-    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/09/16/54765-minions.jpg);
+
+img{
+    max-width: 300px;
+    min-height: 100px;
 }
 
 @media(max-width:799px){

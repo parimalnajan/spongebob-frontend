@@ -3,10 +3,10 @@ var txtInput= document.querySelector("#txt-input");
 var outputDiv=document.querySelector("#output");
 
 
-var serverURL="https://api.funtranslations.com/translate/minion.json";
+var serverURL="https://spongebro2.herokuapp.com/t/";
 
 function getTranslationURL(text){
-    return serverURL+ "?"+ "text="+text;
+    return serverURL+text;
 
 }
 
@@ -25,7 +25,8 @@ function clickEvenetHandler(){
         if(response.status!==200){
         var err=json.error.message;outputDiv.innerText=err;alert(err)}
         else{
-        var translatedText=json.contents.translated;
+        var translatedText=json.result;
+        console.log(translatedText)
                     outputDiv.innerText=translatedText;}})
     .catch(errorHandler)
     );
