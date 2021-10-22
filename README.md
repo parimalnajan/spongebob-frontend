@@ -1,11 +1,11 @@
 ### spongebob-frontend
  
- #### FullStack Translaor App
+ ### FullStack Translaor App
  
- ###### Frontend: 
+ #### Frontend: 
  Static HTML and JS
- ###### Live Link: https://mocking-spongebob.netlify.app/
+ #### Live Link: https://mocking-spongebob.netlify.app/
  
- ###### Backend
+ #### Backend
  Node/Express
- ###### Backend repo: https://github.com/parimalnajan/spongebob-backend
+ #### Backend repo: https://github.com/parimalnajan/spongebob-backend
