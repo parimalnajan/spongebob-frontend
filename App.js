@@ -1,7 +1,8 @@
 var btnTranslate= document.querySelector("#btn-translate");
+var btnCopy=document.querySelector("#btn-copy");
 var txtInput= document.querySelector("#txt-input");
 var outputDiv=document.querySelector("#output");
-
+var alertSpan=document.querySelector("#alert");
 
 var serverURL="https://spongebro2.herokuapp.com/t/";
 
@@ -30,8 +31,16 @@ function clickEvenetHandler(){
                     outputDiv.innerText=translatedText;}})
     .catch(errorHandler)
     );
-
-
 }
+function copyLink(){
+   // navigator.clipboard.writeText(outputDiv.value);
+   outputDiv.select();
+   outputDiv.setSelectionRange(0,99999)
+   navigator.clipboard.writeText(outputDiv.value)
+   alertSpan.setAttribute("style","visibility: visible");
+   setTimeout(()=>{alertSpan.setAttribute("style","visibility: hidden")},3000)
+ };
+
 
 btnTranslate.addEventListener("click",  clickEvenetHandler)
+btnCopy.addEventListener("click", copyLink)

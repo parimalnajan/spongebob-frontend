@@ -32,7 +32,7 @@ textarea{
     font-size: 14px;
 }
 
-#btn-translate{
+.btn{
     border: 2px solid orange;
     border-radius: 8px;
     background-color: #ef982c;
